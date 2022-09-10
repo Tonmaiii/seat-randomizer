@@ -61,6 +61,7 @@
 
     button {
         font-size: 5rem;
+        color: black;
     }
 
     p {
