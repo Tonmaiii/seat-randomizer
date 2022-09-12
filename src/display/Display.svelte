@@ -42,7 +42,6 @@
             '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_'
         return s
             .split('')
-            .reverse()
             .reduce((sum, n) => (sum << 6n) + BigInt(digits.indexOf(n)), 0n)
     }
 
