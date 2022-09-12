@@ -8,7 +8,8 @@
     routes={{
         '/': Home,
         '/skip': Home,
-        '/display/:number': Display
+        '/display/:number': Display,
+        '/display/skip/:number': Display
     }}
 />
 

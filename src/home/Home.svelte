@@ -21,7 +21,7 @@
         while (n !== 0n) {
             const ch = n & 63n
             n >>= 6n
-            ans += digits[Number(ch)]
+            ans = digits[Number(ch)] + ans
         }
         return ans
     }

@@ -57,6 +57,9 @@
         numbers.slice(21, 28),
         [null, null, ...numbers.slice(28, 32), null]
     ]
+
+    let reveal = location.hash.includes('skip') ? 32 : 0
+    setInterval(() => reveal++, 1000)
 </script>
 
 <div class="container">
@@ -65,9 +68,10 @@
             {#each row as number}
                 {#if number === null}
                     <div class="empty" />
-                {/if}
-                {#if number !== null}
+                {:else if number <= reveal}
                     <div class="item">{number}</div>
+                {:else}
+                    <div class="item" />
                 {/if}
             {/each}
         </div>
