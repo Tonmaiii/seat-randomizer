@@ -12,6 +12,3 @@
         '/display/skip/:number': Display
     }}
 />
-
-<style>
-</style>

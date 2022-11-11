@@ -34,13 +34,11 @@
             return
         }
         setTimeout(() => (text = 'Spinning the wheel'), 0)
-        setTimeout(() => (text = 'Actually its done a long time ago'), 4000)
-        setTimeout(() => (text = "I'm just wasting everyone's time"), 6000)
-        setTimeout(() => (text = "Let's actually finish now"), 8000)
         setTimeout(
-            () => (location.hash = `/display/${base64(random())}`),
-            10000
+            () => (text = "I'll make it more interesting this time"),
+            2000
         )
+        setTimeout(() => (location.hash = `/display/${base64(random())}`), 4000)
     }
 </script>
 
