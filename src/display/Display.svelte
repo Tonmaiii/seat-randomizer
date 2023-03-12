@@ -7,12 +7,10 @@
         let result: number[] = []
 
         // Subtracting 1 from N because the
-        // permutations start from 0 in
-        // Factoradic method
+        // permutations start from 0 in Factoradic method
         n = n - 1n
 
-        // Loop to generate the factroid
-        // of the sequence
+        // Loop to generate the factroid of the sequence
         for (let i = 1n; i < arr.length + 1; i++) {
             s.push(n % i)
             n = n / i
